@@ -1,0 +1,28 @@
+{
+  "name": "docker-events2",
+  "version": "1.0.0",
+  "description": "Listen to docker events",
+  "license": "MIT",
+  "author": "Fabian Mersch",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && tape test.js"
+  },
+  "keywords": [
+    "docker",
+    "events"
+  ],
+  "dependencies": {
+    "camelcase-keys": "^4.1.0",
+    "docker-remote-api": "^4.4.1",
+    "ndjson": "^1.5.0",
+    "pump": "^1.0.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "docker-run": "^3.0.0",
+    "faucet": "0.0.1",
+    "tape": "^4.8.0"
+  }
+}
