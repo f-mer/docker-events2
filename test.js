@@ -80,4 +80,3 @@ tape('docker-events', function (t) {
     })
   })
 })
-
